@@ -1,0 +1,25 @@
+lass Solution{
+    //Function to check if two arrays are equal or not.
+    public static boolean check(long A[],long B[],int N)
+    {
+        //comparing the length of both the arrays
+        int n=A.length;
+        int m=B.length;
+        
+        if(n!=m)
+        return false;
+        
+        // sorting the arrays
+        
+        Arrays.sort(A);
+        Arrays.sort(B);
+        
+        //linerly comparing the elements
+        for(int i=0;i<n;i++)
+            if(A[i]!=B[i])
+            return false;
+          //if all the elments are same then we will, print the true  
+        return true;
+        
+    }
+}
